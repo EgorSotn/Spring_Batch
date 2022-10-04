@@ -1,0 +1,28 @@
+spring:
+  batch:
+    job:
+      enabled: false
+  shell:
+    interactive:
+      enabled: true
+  datasource:
+    username: postgres
+    password: westa852
+    url: jdbc:postgresql://localhost:5432/Library
+    initialization-mode: always
+
+  jpa:
+    show-sql: false
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+
+    properties:
+      hibernate:
+        format_sql: true
+
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: SpringBatchTestExampleDB
